@@ -1,0 +1,26 @@
+{
+  "name": "soredis-assistant-ia",
+  "version": "1.0.0",
+  "description": "Assistant IA pour SOREDIS - 100 ans d'expertise en distribution de boissons",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'No build step required for static site'",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "soredis",
+    "assistant-ia",
+    "distribution-boissons",
+    "chr",
+    "supabase",
+    "n8n"
+  ],
+  "author": "SOREDIS",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PoulpYBifle/OREEGAMI_SOREDIS.git"
+  },
+  "homepage": "https://oreegami-soredis.vercel.app"
+}

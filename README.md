@@ -47,3 +47,20 @@ Dans votre workflow n8n, assurez-vous d'utiliser :
 ## Configuration MCP
 
 Créez un fichier `.mcp.json` à la racine du projet avec votre configuration Supabase (non versionné pour des raisons de sécurité).
+
+## Déploiement sur Vercel
+
+Ce projet est configuré pour être déployé sur Vercel :
+
+1. **Connecter le repository GitHub à Vercel**
+2. **Les fichiers de configuration sont déjà prêts :**
+   - `vercel.json` : Configuration de déploiement
+   - `package.json` : Métadonnées du projet
+
+3. **Le déploiement se fera automatiquement** à chaque push sur la branche `master`
+
+### URL de déploiement
+- Production : https://oreegami-soredis.vercel.app (à configurer)
+
+### Variables d'environnement
+Aucune variable d'environnement n'est nécessaire côté frontend. Le webhook n8n est déjà configuré dans le code.
