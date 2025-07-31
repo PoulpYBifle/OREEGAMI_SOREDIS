@@ -6,7 +6,11 @@
       "mcp__supabase__execute_sql",
       "mcp__supabase__apply_migration",
       "Bash(git init:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(git commit:*)",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)",
+      "Bash(git add:*)"
     ],
     "deny": []
   },

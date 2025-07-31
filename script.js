@@ -184,3 +184,28 @@ document.addEventListener('DOMContentLoaded', () => {
     userInput.focus();
 });
 
+// Fonction pour envoyer une suggestion
+function sendSuggestion(suggestion) {
+    console.log('Suggestion cliquée:', suggestion);
+    
+    // S'assurer que les éléments sont disponibles
+    const inputElement = document.getElementById('user-input');
+    
+    if (inputElement) {
+        // Mettre la suggestion dans l'input
+        inputElement.value = suggestion;
+        console.log('Valeur mise dans input:', inputElement.value);
+        
+        // Ajouter la question de l'utilisateur au chat
+        addMessage(suggestion, true);
+        
+        // Vider le champ de saisie
+        inputElement.value = '';
+        
+        // Envoyer la question directement
+        sendQuestion(suggestion);
+    } else {
+        console.error('Input element non trouvé');
+    }
+}
+

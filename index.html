@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOREDIS - Assistant IA | 100 ans d'histoire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
             <div class="header-content">
+                <img src="public/logo-soredis.svg" alt="SOREDIS Logo" class="logo">
                 <h1>SOREDIS</h1>
                 <p class="tagline">100 ans d'expertise en distribution de boissons</p>
             </div>
@@ -53,6 +57,16 @@
                         </button>
                     </div>
                 </form>
+            </div>
+
+            <div class="suggestions">
+                <h3>Questions suggérées</h3>
+                <div class="suggestion-chips">
+                    <div class="chip" onclick="sendSuggestion('Parlez-moi de l histoire de SOREDIS')">Histoire de SOREDIS</div>
+                    <div class="chip" onclick="sendSuggestion('Quels sont vos services pour les CHR ?')">Services CHR</div>
+                    <div class="chip" onclick="sendSuggestion('Comment SOREDIS accompagne-t-elle ses clients ?')">Accompagnement client</div>
+                    <div class="chip" onclick="sendSuggestion('Quelle est votre zone de distribution ?')">Zone de distribution</div>
+                </div>
             </div>
 
         </main>
